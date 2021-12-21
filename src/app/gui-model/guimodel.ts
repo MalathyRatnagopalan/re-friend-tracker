@@ -6,7 +6,7 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "Malathys & Johnnys Friend Tracker",
+            "title": "Malathys & Jonathans Friend Tracker",
             "formList": [
                 {
                     "id": "FriendForm",
@@ -250,10 +250,37 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "newbutton",
                             "name": "NewFriend",
                             "icon": "fa-user",
                             "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/friend",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "friendspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "EditFriend",
+                            "icon": "fa-user",
+                            "color": "pink",
                             "form": {
                                 "form": "FriendForm"
                             }
